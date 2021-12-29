@@ -4,8 +4,15 @@ body {
   justify-content: center;
   align-items: center;
   background-color: rgb(45, 87, 124);
+  color: azure;
 }
 
 .container {
   margin-top: 20px;
+  padding: 5rem;
+}
+
+.checkin,
+.checkout {
+  margin-top: 10px;
 }

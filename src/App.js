@@ -20,6 +20,7 @@ function App() {
   };
   return (
     <div className="App">
+      <h1>Custom Datepicker - Safak Yildiz</h1>
       <div className="container">
         <label htmlFor="checkin">Check-in: </label>
         <input
@@ -28,7 +29,7 @@ function App() {
           name="checkin"
           onSelect={handleSelectStart}
         />
-        <div>Check-in date: {startDate}</div>
+        <div className="checkin">Check-in date: {startDate}</div>
       </div>
       <div className="container">
         <label htmlFor="checkout">Check-out: </label>
@@ -39,7 +40,7 @@ function App() {
           min={startDate}
           onSelect={handleSelectEnd}
         />
-        <div>Check-out date: {endDate}</div>
+        <div className="checkout">Check-out date: {endDate}</div>
       </div>
     </div>
   );
