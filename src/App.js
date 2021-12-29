@@ -28,7 +28,7 @@ function App() {
           name="checkin"
           onSelect={handleSelectStart}
         />
-        <div>{startDate}</div>
+        <div>Check-in date: {startDate}</div>
       </div>
       <div className="container">
         <label htmlFor="checkout">Check-out: </label>
@@ -36,9 +36,10 @@ function App() {
           type="date"
           id="checkout"
           name="checkout"
+          min={startDate}
           onSelect={handleSelectEnd}
         />
-        <div>{endDate}</div>
+        <div>Check-out date: {endDate}</div>
       </div>
     </div>
   );
