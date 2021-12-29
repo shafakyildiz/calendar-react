@@ -20,7 +20,10 @@ function App() {
   };
   return (
     <div className="App">
-      <h1>Custom Datepicker - Safak Yildiz</h1>
+      <h1>
+        Custom Datepicker -{" "}
+        <a href="https://github.com/shafakyildiz">Safak Yildiz</a>
+      </h1>
       <div className="container">
         <label htmlFor="checkin">Check-in: </label>
         <input
